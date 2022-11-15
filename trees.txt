@@ -1,0 +1,155 @@
+
+
+
+	Iterator
+	|  boolean hasNext();
+	|  Object next();
+	|
+--------------------
+|implements
+|
+Xyz <-- implementation of Iterator
+
+			Iterable
+			|
+			| Iterator iterator();
+	-------------------------
+	|
+	Pqr
+	Iterator iterator() {
+		Xyz x = new Xyz();
+		return x;	
+	}
+
+
+
+
+
+
+
+	Account
+	|  boolean isActive();
+	|  int getBalance();
+	|
+--------------------
+|implements
+|
+SavingsAccount <-- implementation of Account
+  isActive() { }
+  getBalance() { }
+			Operational
+			|
+			| Account operate();
+	-------------------------
+	|
+OperationalTransaction
+	Account operate() {
+		Account a = new SavingsAccount();
+		return a;	
+	}
+
+
+
+
+
+
+
+
+	Account
+	    isActive();
+	    getBalance();		
+SavingsAccount |  CurrentAccount | CreditAccount
+LoanAccount | FixedDepositAccount | RDAccount
+PFAccount | DmatAccount
+
+			Operational
+				Account operate();
+			|
+	---------------------------------------
+	|	|	|	|	|	|
+	x	y	z	p	q	r
+Account operate()				Account operate()
+{						{
+    SA ..					  DA
+}						}
+
+
+wait wait wait notify notifyAll
+equals hashCode
+finalize clone
+toString getClass
+			Iterable
+			|   Iterator iterator();
+Object			|   3
+|11			Collection
+?			|  add(Object) { }
+|			|  10
+?	----------------------------
+|	|			|
+?	List			Set
+|	|5 | duplicate		|7 | unique
+---------------		-----------------
+|	      |		|		|
+LinkedList ArrayList	TreeSet		HashSet
+2 = 20	   5 = 23	5 = 25		7 = 27		
+
+	Lehman Brothers
+
+	Collection o = new LinkedList();
+	o.
+
+
+
+
+1	exclusive
+2	inherited
+	overridden
+	implemented
+
+		Doctor
+ Surgery	| diagnose() { } 1
+     |cut();	| fees() { 150/200 } 1 <-- overridden
+     |stitch();
+     |
+     |	---------------------
+     |	|
+     Surgeon
+	2 <---- diagnose is inherited here 
+	3 fees() { 1000/1200 } <-- overridding
+	4 cut() { }, stitch() { } <-- implemented
+
+	TreeSet ts = new TreeSet();
+
+	Comparable
+
+			
+			Root
+			|10
+		---------------------------
+		|			|
+		L			R
+		|5			|20
+	-----------------	-------------------
+	|		|	|		|
+	L 3		R 8	L 15		R 25
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
