@@ -6,6 +6,9 @@ public class ChemicalElement implements Comparable<ChemicalElement>
 	String atomicFormula;
 	float atomicWeight;
 	
+	ChemicalElement left;
+	ChemicalElement right;
+	
 	public ChemicalElement(int atomicNumber, String atomicName, String atomicFormula, float atomicWeight) {
 		super();
 		this.atomicNumber = atomicNumber;
