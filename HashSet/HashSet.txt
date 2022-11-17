@@ -35,7 +35,9 @@
 
 
 
+		array = 12  0  56  0  93  49 88
 
+		array = 12  56  93 49 88  0   0
 
 		 ---------	---------
 	keys	0| ind	|	| India	 |
@@ -48,6 +50,44 @@
 
 	currentSize = 3
 	
+
+
+
+
+	Quadratic Probing
+	---------------------
+		- open addressing scheme
+		- in which the i(pow)2 th slot is used
+
+
+
+		(hash(x) + 1*1 ) %maxsize
+		(hash(x) + 2*2 ) %maxsize
+		(hash(x) + 3*3 ) %maxsize
+
+
+	50 700 76 85 92 73 101
+
+	50%7=1 
+	---------
+	0| 700	|
+	1| 50	|
+	2| 85   |
+	3| 73	|
+	4|	|
+	5| 92	|
+	6| 76	|
+	-----------
+
+
+
+
+
+
+
+
+
+
 
 
 
