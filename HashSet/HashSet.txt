@@ -1,0 +1,67 @@
+
+
+
+	Hashing
+	
+	HashTable
+			Key and Value
+			|	|
+			"ind"	Object -> new Country(.....);
+			"usa"	Object -> new Country(.....);
+			"uk"	Object -> new Country(.....);
+
+
+		0  1   2   3   4   5
+		13 15  18  19  20 30
+
+		Set
+		|unique
+	------------------
+	|		|
+	TreeSet		HashSet
+
+	76 93 40
+				
+76%7=6 , 93%7=2, 40%7=5  47%7=5 10%7=3  55%7=6
+	 --------
+	0| 47	|
+	1| 55	|
+	2| 93	|
+	3| 10	|
+	4|	|
+	5|  40	|
+	6|  76	|
+	 --------
+
+
+
+
+
+		 ---------	---------
+	keys	0| ind	|	| India	 |
+		1| uk	|	| London |
+		2| uae	|	|Emirates|
+		3|chi	|	|China	 |
+		4|usa	|	|America |
+		 ----------	---------
+
+
+	currentSize = 3
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
