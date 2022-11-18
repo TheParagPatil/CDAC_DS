@@ -1,0 +1,38 @@
+package dataStructureModule.hashSet;
+
+public class Codility_5 {
+    public static void main(String[] args) {
+        int[] array = {0,1,0,1,1,0,1 };
+        int c = Codility.solution(array);
+        System.out.println(c);
+    }
+}
+class Codility {
+    public static int solution(int[] A) {
+        int ones =0, count=0;
+        for (int j = A.length-1; j >=0; j--) {
+            if (A[j] ==1) {
+                ones++;
+            } else if (A[j] ==0) {
+                count= count+ones;
+            }
+            if ( count > 1000000000) {
+                return     -1;
+            }
+        }
+        return count;
+    }
+//    public static  int solution(int[] A) {
+//        int countNumber = 0;
+//        int zeroCount = 0;
+//        for (int i = 0; i < A.length; i++) {
+//            if (A[i] == 0) {
+//                zeroCount++;
+//            } else if (A[i] == 1) {
+//                countNumber = countNumber+ zeroCount;
+//            }
+//        }
+//        return countNumber >= 0 && countNumber <= 1000000000 ? countNumber : -1;
+//    }
+
+}
